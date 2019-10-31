@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://git.openembedded.org" name="oe"/>
+  <remote fetch="git://github.com/Freescale" name="freescale"/>
+  <remote fetch="git://github.com/meta-qt5" name="meta-qt5"/>
+  <remote fetch="git://code.qt.io/yocto" name="qtyocto"/>
+  <remote fetch="ssh://codereview.qt-project.org/yocto" name="gerrit"/>
+  <remote fetch="git://git.yoctoproject.org" name="intel"/>
+  <remote fetch="git://github.com/openembedded" name="oe-mirror"/>
+  <remote fetch="git://github.com/madisongh" name="madisongh"/>
+  <remote fetch="ssh://git@git.qt.io/boot2qt" name="playground"/>
+  <remote fetch="git://github.com/renesas-rcar" name="renesas"/>
+  <remote fetch="git://git.linaro.org/openembedded" name="linaro"/>
+  <remote fetch="git://git.toradex.com" name="toradex"/>
+  <remote fetch="git://github.com/boundarydevices" name="boundary"/>
+  <remote fetch="git://github.com/toradex" name="toradex-github"/>
+
+  <project name="poky"
+           remote="yocto"
+           revision="36d5cee56bd389ecbe66dbfad9e5d57c13b56b95"
+           path="sources/poky"/>
+  <project name="meta-openembedded"
+           remote="oe-mirror"
+           revision="2bb21ef27c4b0c9d52d30b3b2c5a0160fd02b966"
+           path="sources/meta-openembedded"/>
+  <project name="meta-boot2qt"
+           remote="qtyocto"
+           revision="72a1cf48d00c1e4cb6bf2a8351e8e611c0dd9bcc"
+           path="sources/meta-boot2qt">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+  </project>
+  <project name="meta-qt5"
+           remote="qtyocto"
+           revision="6830447387d2bfaef1e855040068df2a7f19d485"
+           path="sources/meta-qt5"/>
+  <project name="meta-mingw"
+           remote="qtyocto"
+           revision="fde300483f2133489c1f16b5b03a22050613787b"
+           path="sources/meta-mingw"/>
+
+  <project name="meta-freescale"
+           remote="freescale"
+           revision="2813c0c59a81498afab26a2b1f90db07728df2ed"
+           path="sources/meta-freescale"/>
+  <project name="meta-freescale-3rdparty"
+           remote="freescale"
+           revision="ba684412e6983eeda0ef7158a724305f0f1a2f0a"
+           path="sources/meta-freescale-3rdparty"/>
+  <project name="meta-raspberrypi"
+           remote="yocto"
+           revision="2d40b000021bc8a9ef7f329ed0ad410f8d227b97"
+           path="sources/meta-raspberrypi"/>
+  <project name="meta-intel"
+           remote="intel"
+           revision="b736eed4746899e76a84545471bf06da09a8b64a"
+           path="sources/meta-intel"/>
+  <project name="meta-tegra"
+           remote="madisongh"
+           revision="6b6942c8dd15c2b4a460d46e803b962663955fde"
+           path="sources/meta-tegra"/>
+  <project name="meta-renesas"
+           remote="renesas"
+           revision="276e6ae724d7e604e0d28e4670b8c9edea2957e3"
+           path="sources/meta-renesas"/>
+  <project name="meta-renesas"
+           remote="renesas"
+           revision="0f865eb8b464ca717b1651e10c4ddc0c4f798423"
+           path="sources/meta-renesas-D3"/>
+  <project name="meta-linaro"
+           remote="linaro"
+           revision="282b47a10940c26854c1cca0ec40950192af16fc"
+           path="sources/meta-linaro"/>
+  <project name="meta-toradex-bsp-common"
+           remote="toradex"
+           revision="3e713eef6e056c955b82adaf4b45286a98c3fcdf"
+           path="sources/meta-toradex-bsp-common"/>
+  <project name="meta-toradex-nxp"
+           remote="toradex"
+           revision="656677f4a68e6747971a4a30550cd72c3beb6a76"
+           path="sources/meta-toradex-nxp"/>
+  <project name="meta-boundary"
+           remote="boundary"
+           revision="107a7ceba84b87e1e2a463fea27ae5c53c4e452f"
+           path="sources/meta-boundary"/>
+  <project name="meta-fsl-bsp-release"
+           remote="toradex-github"
+           revision="28c1b2adfb6445a64a42d082299203ec2035ea9f"
+           path="sources/meta-fsl-bsp-release"/>
+
+  <project name="nvidia-layer"
+           remote="playground"
+           revision="af6f41cb527f35263cf7bfde222d92600f5e66e2"
+           path="sources/nvidia-layer"
+           groups="notdefault"/>
+  <project name="drive-t186"
+           remote="playground"
+           revision="a3dc22511ed845b7fe85a7b26c64b1c37a4763c4"
+           path="sources/drive-t186"
+           groups="notdefault"/>
+  <project name="renesas-rcar-gen3"
+           remote="playground"
+           revision="53a345942e4207b2fa1b19d932b5b72bd5c4761c"
+           path="sources/renesas-rcar-gen3"
+           groups="notdefault"/>
+  <project name="meta-smx6"
+           remote="playground"
+           revision="ba2b99a9a5895033f081ffce25b0fd45e847c4c2"
+           path="sources/meta-smx6"
+           groups="notdefault"/>
+</manifest>
