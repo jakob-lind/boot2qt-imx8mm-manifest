@@ -19,7 +19,7 @@
           fetch="git://github.com/openembedded"/>
   <project name="meta-openembedded"
            remote="oe"
-           revision="bb65c27a772723dfe2c15b5e1b27bcc1a1ed884c"
+           revision="9e60d30669a2ad0598e9abf0cd15ee06b523986b"
            path="sources/meta-openembedded"/>
   <project name="meta-python2"
            remote="oe"
@@ -67,7 +67,7 @@
           fetch="git://git.yoctoproject.org"/>
   <project name="meta-intel"
            remote="intel"
-           revision="eacd8eb9f762c90cec2825736e8c4d483966c4d4"
+           revision="1e6dcb762fed9ab5d0265477e4a2ab56748750da"
            path="sources/meta-intel"/>
 
   <!-- NVIDIA -->
@@ -103,6 +103,6 @@
           fetch="git://github.com/boundarydevices"/>
   <project name="meta-boundary"
            remote="boundary"
-           revision="fe30bd3e8b9727a51ab0b20c92298d43af57e228"
+           revision="c4f4ae68fa886a83882d403d35d840944eb746fe"
            path="sources/meta-boundary"/>
 </manifest>
