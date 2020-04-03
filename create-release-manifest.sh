@@ -19,7 +19,7 @@ sed -i -e 's/,internal//' ${MANIFEST}
 
 # add meta-boot2qt
 if grep -q qtyocto ${MANIFEST}; then
-    sed -i -e '/<project name="meta-qt5"/i\
+    sed -i -e '/<project name="meta-qt/i\
 \  <project name="meta-boot2qt"\
            remote="qtyocto"\
            revision="'${REV}'"\
@@ -27,7 +27,7 @@ if grep -q qtyocto ${MANIFEST}; then
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>\
   </project>' ${MANIFEST}
 else
-    sed -i -e '/<project name="meta-qt5"/i\
+    sed -i -e '/<project name="meta-qt/i\
 \  <project name="meta-boot2qt"\
            remote="qt"\
            revision="'${REV}'"\
