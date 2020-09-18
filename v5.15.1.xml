@@ -69,12 +69,12 @@
   <!-- i.MX8M Mini QT -->
   <remote  name="imx8m-mini"
            fetch="git://github.com/abu-edvin"/>
-  <project name="meta-qt-imx8m-mini"
+  <project name="qt-imx8m-mini"
            remote="imx8m-mini"
            revision="4175fe483b587f7c0783c25d13afc4c628c6a98f"
            path="sources/meta-qt-imx8m-mini">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
-    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
+    <linkfile dest="sources/templates" src="conf"/>
   </project>
 
   <!-- Compulab -->
