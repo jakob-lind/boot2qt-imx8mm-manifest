@@ -88,6 +88,10 @@
            remote="compulab"
            revision="6721c37fa6651f1b67d0ab0a6108a58a889b3b3d"
            path="sources/meta-compulab-bsp"/>
+  <project name="meta-bsp-imx8mm">
+           remote="compulab"
+           revision="99a12cff3d42e106606d9d72781fe181dae42fea"
+           path="sources/meta-bsp-imx8mm"/>
 
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
