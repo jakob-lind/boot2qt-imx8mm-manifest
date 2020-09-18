@@ -36,8 +36,6 @@
            remote="qt"
            revision="a995d61ce21e666feb2ec42d3f5d11ccf2312e07"
            path="sources/meta-boot2qt">
-    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
-    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
   </project>
   <project name="meta-qt5"
            remote="qt"
@@ -55,6 +53,41 @@
            remote="freescale"
            revision="dbcc686f52c3c84db8cb86aa8973a4e373651b98"
            path="sources/meta-freescale-3rdparty"/>
+  <project name="meta-freescale-distro"
+           remote="freescale"
+	       revision="ca27d12e4964d1336e662bcc60184bbff526c857"
+           path="sources/meta-freescale-distro"/>
+
+  <!-- i.MX -->
+  <remote  name="imx"
+           fetch="https://source.codeaurora.org/external/imx"/>
+  <project name="meta-imx"
+           remote="imx"
+           revision="a083ffbbc3f4d1c02b1542746784d7f641a75b60"
+           path="sources/meta-imx"/>
+	
+  <!-- i.MX8M Mini QT -->
+  <remote  name="imx8m-mini"
+           fetch="git://github.com/abu-edvin"/>
+  <project name="meta-qt-imx8m-mini"
+           remote="imx8m-mini"
+           revision="4175fe483b587f7c0783c25d13afc4c628c6a98f"
+           path="sources/meta-qt-imx8m-mini">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
+  </project>
+
+  <!-- Compulab -->
+  <remote  name="compulab"
+           fetch="git://github.com/compulab-yokneam"/>
+  <project name="meta-compulab"
+           remote="compulab"
+           revision="dfbae58a70d41659bce61f7e90e528fa2ed772be"
+           path="sources/meta-compulab"/>
+  <project name="meta-compulab-bsp"
+           remote="compulab"
+           revision="6721c37fa6651f1b67d0ab0a6108a58a889b3b3d"
+           path="sources/meta-compulab-bsp"/>
 
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
