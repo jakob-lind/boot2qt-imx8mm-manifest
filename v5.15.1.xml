@@ -67,12 +67,12 @@
            path="sources/meta-imx"/>
 	
   <!-- i.MX8M Mini QT -->
-  <remote  name="imx8m-mini"
+  <remote  name="qt-imx8mm"
            fetch="git://github.com/abu-edvin"/>
-  <project name="qt-imx8m-mini"
-           remote="imx8m-mini"
+  <project name="boot2qt-imx8mm"
+           remote="qt-imx8mm"
            revision="4175fe483b587f7c0783c25d13afc4c628c6a98f"
-           path="sources/meta-qt-imx8m-mini">
+           path="sources/meta-boot2qt-imx8mm">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
     <linkfile dest="sources/templates" src="conf"/>
   </project>
@@ -88,7 +88,7 @@
            remote="compulab"
            revision="6721c37fa6651f1b67d0ab0a6108a58a889b3b3d"
            path="sources/meta-compulab-bsp"/>
-  <project name="meta-bsp-imx8mm">
+  <project name="meta-bsp-imx8mm"
            remote="compulab"
            revision="99a12cff3d42e106606d9d72781fe181dae42fea"
            path="sources/meta-bsp-imx8mm"/>
