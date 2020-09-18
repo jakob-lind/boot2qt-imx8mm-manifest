@@ -67,10 +67,10 @@
            path="sources/meta-imx"/>
 	
   <!-- i.MX8M Mini QT -->
-  <remote  name="qt-imx8mm"
-           fetch="git://github.com/abu-edvin"/>
+  <remote  name="lind"
+           fetch="git://github.com/jakob-lind"/>
   <project name="boot2qt-imx8mm"
-           remote="qt-imx8mm"
+           remote="lind"
            revision="4175fe483b587f7c0783c25d13afc4c628c6a98f"
            path="sources/meta-boot2qt-imx8mm">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
