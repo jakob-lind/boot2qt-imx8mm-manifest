@@ -19,7 +19,7 @@ or download with:
 
 After installing the repo tool, run following commands to initialize the build environment.
 
-    repo init -u git://code.qt.io/yocto/boot2qt-manifest -m <manifest>
+    repo init -u https://github.com/jakob-lind/boot2qt-imx8mm-manifest.git -m v5.15.1.xml
     repo sync
 
     export MACHINE=<target machine>
