@@ -6,10 +6,12 @@
   <project name="poky"
            remote="yocto"
            revision="012ad10a89a889c21e67c27dc37d22520212548f"
+           upstream="dunfell"
            path="sources/poky"/>
   <project name="meta-mingw"
            remote="yocto"
            revision="524de686205b5d6736661d4532f5f98fee8589b7"
+           upstream="dunfell"
            path="sources/meta-mingw"/>
 
   <!-- OpenEmbedded -->
@@ -20,6 +22,7 @@
   <project name="meta-openembedded"
            remote="oe"
            revision="2a5c534d2b9f01e9c0f39701fccd7fc874945b1c"
+           upstream="dunfell"
            path="sources/meta-openembedded"/>
 
   <!-- Qt -->
@@ -31,6 +34,7 @@
   <project name="meta-boot2qt"
            remote="qt"
            revision="dev"
+           upstream="dev"
            path="sources/meta-boot2qt">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
     <linkfile dest="sources/templates" src="meta-boot2qt-distro/conf"/>
@@ -38,6 +42,7 @@
   <project name="meta-qt6"
            remote="qt"
            revision="dev"
+           upstream="dev"
            path="sources/meta-qt6"/>
 
   <!-- NXP -->
@@ -46,16 +51,19 @@
   <project name="meta-freescale"
            remote="freescale"
            revision="4da095837c93b84d52c7029d5c83796602c6834e"
+           upstream="dunfell"
            path="sources/meta-freescale"/>
   <project name="meta-freescale-3rdparty"
            remote="freescale"
            revision="ac7476ea5aef52eb5fda4ce00756e7e0ddfe1174"
+           upstream="dunfell"
            path="sources/meta-freescale-3rdparty"/>
 
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
            remote="yocto"
-           revision="f20ccfa11db4c0d1608cf6f3e654d29c5bfc3dd3"
+           revision="987993209716302eb8f314f69a2a3340555f94d8"
+           upstream="dunfell"
            path="sources/meta-raspberrypi"/>
 
   <!-- Intel -->
@@ -64,6 +72,7 @@
   <project name="meta-intel"
            remote="intel"
            revision="81cfa07db0ca5f756179af2af5799a2fce5ee7ee"
+           upstream="dunfell"
            path="sources/meta-intel"/>
 
   <!-- NVIDIA -->
@@ -72,6 +81,7 @@
   <project name="meta-tegra"
            remote="madisongh"
            revision="ee17b63336727658c543d9a6c93545d755bdc6b3"
+           upstream="dunfell-l4t-r32.4.3"
            path="sources/meta-tegra"/>
   <!-- internal layer for the nvidia devnet downloads -->
   <remote name="playground"
@@ -88,17 +98,12 @@
   <project name="meta-toradex-bsp-common"
            remote="toradex"
            revision="51927b354280c398b11b7b6bd64c1617825f17d1"
+           upstream="dunfell-5.x.y"
            path="sources/meta-toradex-bsp-common"/>
   <project name="meta-toradex-nxp"
            remote="toradex"
            revision="fddb6cc10a1df717cc77b6958ce5e233cef9a80a"
+           upstream="dunfell-5.x.y"
            path="sources/meta-toradex-nxp"/>
 
-  <!-- BoundaryDevices -->
-  <remote name="boundary"
-          fetch="git://github.com/boundarydevices"/>
-  <project name="meta-boundary"
-           remote="boundary"
-           revision="317c4f037b8b82811be56a271266fb31cdd1fc7a"
-           path="sources/meta-boundary"/>
 </manifest>
