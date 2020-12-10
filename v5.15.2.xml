@@ -55,6 +55,45 @@
            remote="freescale"
            revision="dbcc686f52c3c84db8cb86aa8973a4e373651b98"
            path="sources/meta-freescale-3rdparty"/>
+  <project name="meta-freescale-distro"
+           remote="freescale"
+	       revision="ca27d12e4964d1336e662bcc60184bbff526c857"
+           path="sources/meta-freescale-distro"/>
+
+  <!-- i.MX -->
+  <remote  name="imx"
+           fetch="https://source.codeaurora.org/external/imx"/>
+  <project name="meta-imx"
+           remote="imx"
+           revision="a083ffbbc3f4d1c02b1542746784d7f641a75b60"
+           path="sources/meta-imx"/>
+	
+  <!-- i.MX8M Mini QT -->
+  <remote  name="lind"
+           fetch="git://github.com/jakob-lind"/>
+  <project name="boot2qt-imx8mm"
+           remote="lind"
+           revision="351d802ad6bfe8379e515425d793200ddc654b94"
+           path="sources/meta-boot2qt-imx8mm">
+    <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
+    <linkfile dest="sources/templates" src="conf"/>
+  </project>
+
+  <!-- Compulab -->
+  <remote  name="compulab"
+           fetch="git://github.com/compulab-yokneam"/>
+  <project name="meta-compulab"
+           remote="compulab"
+           revision="dfbae58a70d41659bce61f7e90e528fa2ed772be"
+           path="sources/meta-compulab"/>
+  <project name="meta-compulab-bsp"
+           remote="compulab"
+           revision="6721c37fa6651f1b67d0ab0a6108a58a889b3b3d"
+           path="sources/meta-compulab-bsp"/>
+  <project name="meta-bsp-imx8mm"
+           remote="compulab"
+           revision="99a12cff3d42e106606d9d72781fe181dae42fea"
+           path="sources/meta-bsp-imx8mm"/>
 
   <!-- Raspberry Pi -->
   <project name="meta-raspberrypi"
