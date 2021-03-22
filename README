@@ -22,7 +22,7 @@ After installing the repo tool, run following commands to initialize the build e
     repo init -u https://github.com/jakob-lind/boot2qt-imx8mm-manifest.git -m v5.15.1.xml
     repo sync
 
-    export MACHINE=<target machine> (machines: mcm-imx8m-mini, raysafe-imx8mm-emil)
+    export MACHINE=mcm-imx8m-mini
     source setup-environment.sh
 
 

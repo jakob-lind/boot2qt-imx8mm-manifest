@@ -71,7 +71,7 @@
            fetch="git://github.com/jakob-lind"/>
   <project name="boot2qt-imx8mm"
            remote="lind"
-           revision="fd46e9ad15d382a21e8dbf5150d311691e291731"
+           revision="cb25851eea48973bf05943454f5f78643130555c"
            path="sources/meta-boot2qt-imx8mm">
     <linkfile dest="setup-environment.sh" src="scripts/setup-environment.sh"/>
     <linkfile dest="sources/templates" src="conf"/>
